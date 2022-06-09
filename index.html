@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Renato Alencar">
+    <meta name="description"
+        content="This is a simple website that allows you to record and save information about the grind of infinity potions on Black Desert Online.">
+    <link rel="icon" sizes="44x44" href="./onett.png">
+    <title>Trash/Potion</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+
+<body>
+
+    <video id="backVideo" autoplay playsinline loop muted>
+        <source src="./Video/eternalWinter.webm" type="video/webm">
+    </video>
+
+    <header id="navigation" class="myNav">
+        <nav>
+            <a href="https://bdocodex.com" target="_blank">BDO Codex</a>
+            <a href="./index.html" class="active"><img id="mainIcon" src="./Images/onett.png" alt="Onett"></a>
+            <a href="https://gamezbd-info.pages.dev" target="_blank">GameZ Information</a>
+            <a href="script.js" class="iconJS" onclick="navFunction()"><i class="fa fa-bars"></i></a>
+            <hr id="navLine" />
+        </nav>
+    </header>
+
+    <main class="mainContent">
+        <article>
+            <section>
+                <h1 class="m-40">Number of trash loot until Potion Piece.</h1>
+
+                <p class="m-40">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eaque dolores suscipit
+                    neque nulla eius impedit voluptas ab? Est obcaecati harum enim sunt minus excepturi mollitia
+                    voluptas quam, suscipit possimus.</p>
+            </section>
+        </article>
+    </main>
+
+    <!--HP Potion-->
+    <section class="content">
+        <div class="tableHpFull">
+            <table id="tableHp" class="marginTable">
+
+                <span id="hpHead">
+                    <colgroup>
+                        <col style="background-color: #B11F00;">
+                        <col style="background-color: #FE5B38;">
+                        <col style="background-color: #B11F00;">
+                        <col style="background-color: #FE5B38;">
+                    </colgroup>
+
+                    <thead>
+                        <tr>
+                            <th rowspan="2" id="onettCol"><img src="./Images/onett.png" alt="onett"></a></th>
+                            <th colspan="3" id="titleHp">Number of Trash per Potion Piece (Onett)</th>
+                        </tr>
+                        <tr>
+                            <th scope="col" id="ronarosCol"><img src="./Images/ronaros.png" alt="Ronaros"><br>Ronaros
+                            </th>
+                            <th scope="col" id="wolfCol"><img src="./Images/wolf.png" alt="Wolf"><br>Red Wolf</th>
+                            <th scope="col" id="sherekhanCol"><img src="./Images/sherekhan.png"
+                                    alt="Sherekhan"><br>Sherekhan</th>
+                        </tr>
+                    </thead>
+                </span>
+
+                <tbody>
+
+                    <span id="hpTrash">
+                        <tr>
+                            <th scope="row">Trash</th>
+                            <td scope="row">5970</td>
+                            <!--Ronaros-->
+                            <td scope="row">15025</td>
+                            <!--Wolfs-->
+                            <td scope="row">3912</td>
+                            <!--Sherekhan-->
+                        </tr>
+                    </span>
+
+                    <span id="hpMPiece">
+                        <tr>
+                            <th scope="row">Mini Piece</th>
+                            <td scope="row">6</td>
+                            <!--Ronaros-->
+                            <td scope="row">15</td>
+                            <!--Wolfs-->
+                            <td scope="row">3</td>
+                            <!--Sherekhan-->
+                        </tr>
+                    </span>
+
+                    <span id="hpAcc">
+                        <tr>
+                            <th scope="row">Accessories</th>
+                            <td scope="row">5</td>
+                            <!--Ronaros-->
+                            <td scope="row">N/A</td>
+                            <!--Wolfs-->
+                            <td scope="row">0</td>
+                            <!--Sherekhan-->
+                        </tr>
+                    </span>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="row">Done</th>
+                        <td class="checkbox" scope="row"><input type="checkbox"></td>
+                        <td class="checkbox" scope="row"><input type="checkbox"></td>
+                        <td class="checkbox" scope="row"><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <th colspan="4"><button class="submitButton">Submit</button></th>
+                    </tr>
+                </tfoot>
+        </div>
+        </table>
+    </section>
+
+    <article class="content">
+        <h2 class="m-40">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda consectetur cumque eveniet
+            quaerat quae at asperiores, voluptatem ab ipsa officiis hic veniam, ratione totam cupiditate illum repellat.
+            In, accusamus nihil?</h2>
+        <p class="m-40">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur iure omnis totam optio,
+            repellendus dolorum est sequi obcaecati doloribus possimus qui vel ullam autem, eligendi aperiam ducimus
+            tenetur, soluta a.</p>
+        <hr />
+    </article>
+
+    <!--MP Potion-->
+    <section class="content">
+        <div id="tableMpFull">
+            <table id="tableMp" class="marginTable">
+
+                <span id="mpHead">
+                    <colgroup>
+                        <col style="background-color: #0603bb;">
+                        <col style="background-color: hsl(221, 100%, 53%);">
+                        <col style="background-color: #0603bb;">
+                        <col style="background-color: hsl(221, 100%, 53%);">
+                    </colgroup>
+
+                    <thead>
+                        <tr>
+                            <th rowspan="2"><img src="./images/odore.png" alt="odore"></a></th>
+                            <th colspan="3" id="titlemp">Number of Trash per Potion Piece (Odore)</th>
+                        </tr>
+                        <tr>
+                            <th scope="col"> <img src="./Images/tshira.png" alt="tshira"><br>Tshira</th>
+                            <th scope="col"><img src="./Images/narc.png" alt="manshaum"><br>Manshaum</th>
+                            <th scope="col"><img src="./Images/valtarra.png" alt="valtarra"><br> Steppe</th>
+                        </tr>
+                    </thead>
+                </span>
+
+                <tbody>
+
+                    <span id="mpTrash">
+                        <tr>
+                            <th scope="row">Trash</th>
+                            <td scope="row"><input maxlength="6" id="rowLightBlue"></td>
+                            <!--Tshira-->
+                            <td scope="row"><input maxlength="6" id="rowStrongBlue"></td> <!-- Manshaum-->
+                            <td scope="row"><input maxlength="6" id="rowLightBlue"></td>
+                            <!--Navarn-->
+                        </tr>
+                    </span>
+
+                    <span id="mpMPiece">
+                        <tr>
+                            <th scope="row">Mini Piece</th>
+                            <td scope="row"><input maxlength="6" id="rowLightBlue"></td>
+                            <!--Tshira-->
+                            <td scope="row"><input maxlength="6" id="rowStrongBlue"></td> <!-- Manshaum-->
+                            <td scope="row"><input maxlength="6" id="rowLightBlue"></td>
+                            <!--Navarn-->
+                        </tr>
+                    </span>
+
+                    <span id="mpAcc">
+
+                        <tr>
+                            <th scope="row">Accessories</th>
+                            <td scope="row"><input maxlength="6" id="rowLightBlue"></td>
+                            <!--Tshira-->
+                            <td scope="row"><input maxlength="6" id="rowStrongBlue"></td> <!-- Manshaum-->
+                            <td scope="row"><input maxlength="6" id="rowLightBlue"></td>
+                            <!--Navarn-->
+                        </tr>
+                    </span>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="row">Done</th>
+                        <td class="checkbox" scope="row"><input type="checkbox"></td>
+                        <td class="checkbox" scope="row"><input type="checkbox"></td>
+                        <td class="checkbox" scope="row"><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <th colspan="4"><button class="submitButton">Submit</button></th>
+                    </tr>
+                </tfoot>
+        </div>
+    </section>
+
+    </table>
+
+    <article>
+        <h2 class="m-40">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus animi excepturi non sequi?
+            Modi, animi id labore quam molestias dolorem tempora deserunt, fugiat a facere, minus non dignissimos
+            obcaecati! Fuga!</h2>
+        <p class="m-40">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur iure omnis totam optio,
+            repellendus dolorum est sequi obcaecati doloribus possimus qui vel ullam autem, eligendi aperiam ducimus
+            tenetur, soluta a.</p>
+    </article>
+
+</html>

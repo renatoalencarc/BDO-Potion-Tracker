@@ -1,0 +1,202 @@
+nav {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+    background-image: url(./Images/winter.jpeg);
+}
+
+#backVideo {
+    min-height: 100vh;
+    min-width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+#mainIcon {
+    width: 44px;
+    border-radius: 22px;
+}
+
+.mainContent {
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.content {
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.myNav {
+    background-color: #333;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.myNav a {
+    float: none;
+    display: inline;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.myNav a.active {
+    background-color: black;
+    width: 44px;
+    border-radius: 10%;
+}
+
+.myNav a:hover {
+    background-color: black;
+    color: white;
+    border-radius: 10%;
+}
+
+.myNav .iconJS {
+    display: none;
+}
+
+#navLine {
+    margin-top: 20px;
+}
+
+/* Text */
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 40px;
+    background-color: #333;
+    text-align: justify;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    background-color: #333;
+    box-sizing: border-box;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: medium;
+    background-color: #333;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+input {
+    opacity: 100%;
+    width: 90px;
+    height: fit-content;
+    margin: -5px;
+    box-sizing: border-box;
+}
+
+#rowLightBlue {
+    background-color: hsl(221, 100%, 53%)
+}
+
+#rowStrongBlue {
+    background-color: #0603bb;
+}
+
+/* Margin */
+
+.m-40 {
+    margin: 40px;
+}
+
+.marginTable {
+
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+
+/* Table HP*/
+
+
+#tableHp {
+
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    background: white;
+    width: 400px;
+    height: 200px;
+    align-content: center;
+    table-layout: fixed;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+#titleHp {
+
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-style: normal;
+
+}
+
+#ronarosCol {
+
+    font-family: Arial, Helvetica, sans-serif;
+    width: fit-content;
+    height: fit-content;
+    font-weight: bolder;
+}
+
+/* Table MP */
+
+#tableMp {
+
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    background: white;
+    width: 400px;
+    height: 200px;
+    align-content: center;
+    table-layout: fixed;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Other */
+
+button {
+    background: rgba(0, 0, 0, 0.9);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
